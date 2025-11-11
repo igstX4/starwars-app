@@ -43,7 +43,7 @@ export const handlers = [
   }),
 
   http.get(`${base}/films/:id/`, ({ params }) => {
-    const id = Number(params.id)
+    const id: number = Number(params.id)
     const map: Record<number, { id: number; title: string; starships: number[] }> = {
       2: { id: 2, title: 'A New Hope', starships: [12] },
       3: { id: 3, title: 'Empire Strikes Back', starships: [22] },
@@ -51,7 +51,8 @@ export const handlers = [
       5: { id: 5, title: 'The Phantom Menace', starships: [] },
       6: { id: 6, title: 'Attack of the Clones', starships: [] },
     }
-    return HttpResponse.json(map[id] ?? { id, title: `Film ${id}`, starships: [] })
+    const fallback: { id: number; title: string; starships: number[] } = { id, title: `Film ${id}`, starships: [] }
+    return HttpResponse.json(map[id] ?? fallback)
   }),
 
   http.get(`${base}/starships/:id/`, ({ params }) => {

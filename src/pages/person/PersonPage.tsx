@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useMemo } from 'react'
 import { usePersonGraph } from '@/features/person/hooks/usePersonGraph'
-import ReactFlow, { Background, Controls, MiniMap } from 'reactflow'
+import ReactFlow, { Background, Controls } from 'reactflow'
 import 'reactflow/dist/style.css'
 import { Spinner } from '@/shared/ui/loader/Spinner'
 import { IMG_BASE_PEOPLE } from '@/shared/config/env'

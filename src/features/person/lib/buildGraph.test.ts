@@ -9,7 +9,7 @@ describe('buildGraph', () => {
   }
   const films = [
     { id: 2, title: 'A New Hope', starships: [12] },
-    { id: 'https://sw-api.starnavi.io/films/3/', title: 'Empire Strikes Back', starships: [22, 99] },
+    { id: 3, title: 'Empire Strikes Back', starships: [22, 99] },
   ]
   const starships = [
     { id: 12, name: 'X-wing' },
