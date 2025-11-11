@@ -24,7 +24,7 @@ export function Header() {
 					</Link>
 					<div className="flex items-center justify-end">
 						<a
-							href="https://github.com/igstX4"
+							href="https://github.com/igstX4/starwars-app"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 p-1 transition hover:bg-white/20"
