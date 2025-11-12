@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '@/assets/logo.png'
 
 export function Header() {
 	return (
@@ -7,7 +8,7 @@ export function Header() {
 				<div className="grid grid-cols-3 items-center">
 					<Link to="/" className="flex items-center justify-start">
 						<img
-							src="/src/assets/logo.png"
+							src={logo}
 							alt="Stormtrooper"
 							className="h-7 w-auto drop-shadow-[0_0_8px_rgba(255,255,255,0.25)]"
 						/>

@@ -1,9 +1,11 @@
+import logo from '@/assets/logo.png'
+
 export function HomeIntroCard() {
 	return (
 		<div className="w-full rounded-2xl border border-white/15 bg-[rgba(255,255,255,0.06)] backdrop-blur-xl shadow-lg p-6 md:p-10 text-white">
 			<div className="flex flex-col items-center text-center gap-4 md:gap-6">
 				<img
-					src="/src/assets/logo.png"
+					src={logo}
 					alt="Star Wars emblem"
 					className="h-16 w-auto opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.3)]"
 				/>
